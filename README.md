@@ -273,3 +273,66 @@ Test:
 - Backend complexity: low
 - Sync complexity: medium
 - Estimated sprint cost: 3 to 5 weeks
+
+## External Outreach Guidance
+
+This section captures a realistic way to route a feature concept like this to the right public-facing roles without inventing or guessing private contact details.
+
+### Who Could Evaluate a Feature Like This
+
+You generally cannot pitch directly to individual WhatsApp engineers without an existing working relationship. More realistic routes are:
+
+#### Path 1: Product Managers at WhatsApp
+
+Look for public profiles with titles such as:
+
+- Product Manager, Messaging
+- Product Manager, Chat Experience
+- Product Manager, Privacy
+- Product Manager, Messaging Platform
+
+These roles are often best positioned to evaluate product fit and prioritization.
+
+#### Path 2: WhatsApp UX and Product Designers
+
+Relevant titles include:
+
+- Product Designer, Messaging
+- UX Designer, Messaging Experience
+- Interaction Designer
+
+Design teams are often strong internal champions for lightweight user experience improvements.
+
+#### Path 3: Meta Open Innovation and External Programs
+
+Potential routes include:
+
+- Meta developer programs
+- Hackathons
+- Startup accelerators
+
+#### Path 4: Public Product Feedback Channels
+
+Potential public-facing routes include:
+
+- WhatsApp beta program
+- Meta developer community
+- Meta product feedback forms
+
+### Public Role Searches
+
+If trying to find relevant people through public channels such as LinkedIn, search for role patterns like:
+
+- Product Manager - WhatsApp Messaging
+- Product Designer - WhatsApp Chat
+- Engineering Manager - WhatsApp Messaging
+- Director of Product - WhatsApp
+
+### Positioning Tip
+
+When pitching the concept, framing matters. Instead of leading with the feature name `Notes`, position it as:
+
+- Relationship Memory
+- Context Memory
+
+That framing communicates the user value more clearly than a generic note-taking label.
