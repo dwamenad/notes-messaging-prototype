@@ -175,3 +175,101 @@ Actions:
 | Edit note | Updates the note timestamp |
 | Delete note | Removes the note immediately |
 | Reach 240 characters | Additional input is blocked |
+
+### Privacy
+
+Notes are:
+
+- Visible only to the current user
+- Not synced to other chat participants
+- Not visible in exported chats
+- Not visible in backups shared with other users
+
+Notes are expected to sync across the user’s own devices through account-level sync.
+
+### Storage
+
+Recommended storage shape:
+
+Client-side table:
+
+- `note_id`
+- `chat_id`
+- `user_id`
+- `note_text`
+- `note_label`
+- `created_timestamp`
+- `updated_timestamp`
+
+Server-side recommendation:
+
+- Encrypted user metadata store
+
+Notes should be modeled as end-to-end-encryption-safe user metadata rather than shared conversation data.
+
+### Optional Future Enhancements
+
+- Save to Notes from chat via long-press on a message
+- Birthday reminders
+- Anniversary reminders
+- Pinned notes
+- Search within notes
+- Smart suggestions when a message looks like a memorable personal detail
+
+Example suggestion:
+
+`July 18 is my birthday` → `Save to Notes?`
+
+### Edge Cases
+
+- If the chat is deleted, all notes tied to that chat are deleted.
+- If a contact changes number, notes persist through the chat ID.
+- If the group is removed, notes are deleted.
+- If the user leaves the group, notes are removed locally.
+
+### Performance Considerations
+
+- Expected average notes per chat: 1 to 5
+- Worst case per chat: 50
+- Storage impact should remain minimal
+
+### Security
+
+Notes should be:
+
+- Encrypted in transit
+- Encrypted at rest
+- Tied to the authenticated user ID
+- Excluded from other users’ data views
+
+### Metrics
+
+Track:
+
+- Notes created per chat
+- Notes opened from the info screen
+- Notes edited
+- Retention of notes after 30 days
+
+Success metric:
+
+- Increase in relationship context recall actions
+
+### QA Checklist
+
+Test:
+
+- Character limit enforcement
+- Add, edit, and delete flows
+- Empty state rendering
+- Sync across devices
+- Chat deletion cleanup
+- Performance with 50 notes
+- Dark and light theme presentation
+
+### Engineering Estimate
+
+- UI complexity: low to medium
+- Backend complexity: low
+- Sync complexity: medium
+- Estimated sprint cost: 3 to 5 weeks
