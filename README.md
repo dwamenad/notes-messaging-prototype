@@ -105,3 +105,73 @@ Placement order:
 - Title: `Remember the little things`
 - Text: `Save birthdays, anniversaries, names, and other details from this chat.`
 - CTA: `Add note`
+
+### Data Model
+
+Each note object is expected to follow this shape:
+
+```ts
+type Note = {
+  id: string;
+  chat_id: string;
+  owner_user_id: string;
+  text: string; // max 240 characters
+  label?: string;
+  created_at: string;
+  updated_at: string;
+};
+```
+
+Constraints:
+
+- Maximum characters per note: 240
+- Maximum notes per chat: 50 as a soft limit
+
+Example notes:
+
+- Birthday — July 18
+- Anniversary — Oct 4
+- Graduation — May 2027
+- Personal — Loves bread pudding
+
+### Add Note Flow
+
+User taps Add Note and opens a screen or modal containing:
+
+- Note text field, required
+- Optional label selector
+- Character counter
+- Cancel and Save actions
+
+Suggested labels:
+
+- Birthday
+- Anniversary
+- Family
+- School
+- Favorites
+- Personal
+- Custom
+
+Validation:
+
+- Save is disabled when the note is empty.
+- Save is disabled when the note exceeds 240 characters.
+
+### Edit Note Flow
+
+When a user taps an existing note, the edit experience opens with fields prefilled.
+
+Actions:
+
+- Save changes
+- Delete note
+
+### Interaction Behavior
+
+| Action | Result |
+| --- | --- |
+| Add note | Appears in the notes list |
+| Edit note | Updates the note timestamp |
+| Delete note | Removes the note immediately |
+| Reach 240 characters | Additional input is blocked |
