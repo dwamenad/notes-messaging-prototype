@@ -68,3 +68,40 @@ The Notes feature will not:
 - Be visible to other chat participants.
 - Store large content such as images, files, or long-form text.
 - Replace starred messages.
+
+### Feature Placement
+
+#### Entry Point
+
+The main entry point is the Chat Info or Group Info screen.
+
+Placement order:
+
+1. Mute notifications
+2. Custom notifications
+3. Notes
+4. Media visibility
+
+### UI Specification
+
+#### Row in Chat Info
+
+- Title: `Notes`
+- Subtitle, empty state: `Save important details from this chat`
+- Subtitle, populated state: `3 saved notes`
+- Interaction: tap opens the Notes screen
+
+#### Notes Screen
+
+- Header: `Notes`
+- Description: `Save short details you want to remember from this chat.`
+- Primary elements:
+  - Add Note button
+  - List of saved notes
+  - Edit and Delete actions
+
+#### Empty State
+
+- Title: `Remember the little things`
+- Text: `Save birthdays, anniversaries, names, and other details from this chat.`
+- CTA: `Add note`
