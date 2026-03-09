@@ -9,6 +9,13 @@ React prototype for a private "Chat Notes" feature presented inside an original 
 - Includes a group info entry point, notes list, add/edit note flow, and a future-facing "Save to Notes" interaction demo.
 - Does not use or claim to use WhatsApp source code.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/group-info-screen.png" alt="Group info screen with the Notes row between custom notifications and media visibility" width="280" />
+  <img src="docs/screenshots/notes-screen.png" alt="Notes screen showing saved note cards and the Add note action" width="280" />
+</p>
+
 ## Run Locally
 
 ```bash
