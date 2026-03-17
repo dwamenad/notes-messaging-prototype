@@ -262,23 +262,5 @@ Success metric:
 
 - Increase in relationship context recall actions
 
-### QA Checklist
-
-Test:
-
-- Character limit enforcement
-- Add, edit, and delete flows
-- Empty state rendering
-- Sync across devices
-- Chat deletion cleanup
-- Performance with 50 notes
-- Dark and light theme presentation
-
-### Engineering Estimate
-
-- UI complexity: low to medium
-- Backend complexity: low
-- Sync complexity: medium
-- Estimated sprint cost: 3 to 5 weeks
 
 
